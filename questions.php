@@ -20,6 +20,36 @@ $questions = [
       'd' => '1999'
     ],
     'correctAnswer' => '1998'
+  ],[
+    'name' => 'question3',
+    'text' => 'Question 3: What does the abbreviation GPS mean?',
+    'answers' => [
+      'a' => 'Global Positioning Software',
+      'b' => 'Global Positioning System',
+      'c' => 'General Positioning Software',
+      'd' => 'General Positioning System'
+    ],
+    'correctAnswer' => 'Global Positioning System'
+  ],[
+    'name' => 'question4',
+    'text' => 'Question 4: What color is cobalt?',
+    'answers' => [
+      'a' => 'Black',
+      'b' => 'Green',
+      'c' => 'Grey',
+      'd' => 'Blue'
+    ],
+    'correctAnswer' => 'Blue'
+  ],[
+    'name' => 'question5',
+    'text' => 'Question 5: In which country were the first Olympic Games held?',
+    'answers' => [
+      'a' => 'Greece',
+      'b' => 'United States',
+      'c' => 'Italy',
+      'd' => 'Brazil'
+    ],
+    'correctAnswer' => 'Greece'
   ]
 ];
 ?>
