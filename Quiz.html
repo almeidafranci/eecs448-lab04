@@ -55,7 +55,7 @@
         <form action="Quiz.php" method="POST">
 
           <?php foreach ($questions as $question) { ?>
-            <p><?php echo $question->text; ?></p>
+            <p><?php echo $question['text']; ?></p>
             <div class="radio">
               <label>
                 <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
