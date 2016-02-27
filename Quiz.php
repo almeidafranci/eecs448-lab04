@@ -40,12 +40,20 @@
       <div>
         <h1>Quiz</h1>
 
-        <?php $correct = 0; foreach ($questions as $question) { ?>
+        <?php 
+        $correct = 0;
+        foreach ($questions as $question) {
+        ?>
           <p><?php echo $question['text']; ?></p>
           <p>You answered: <?php echo $_POST[$question['name']]; ?></p>
           <p>Correct answer: <?php echo $question['correctAnswer']; ?></p>
           <br />
-        <?php } ?>
+        <?php 
+          if($_POST[$question['name']]==$question['correctAnswer']){
+            $correct++;
+          }
+        } 
+        ?>
 
         <?php echo '<p>You answered '.$correct.' question(s) correctly. Your score was '.(($correct/5)*100).'%.</p>'; ?>
 
