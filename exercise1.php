@@ -27,7 +27,8 @@
         <div id="navbar">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Home</a></li>
-	    		<li class="active"><a href="exercise1.php">Exercise 1</a></li>
+            <li class="active"><a href="exercise1.php">Exercise 1</a></li>
+            <li><a href="Quiz.html">Exercise 2</a></li>
           </ul>
         </div>
       </div>
