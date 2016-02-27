@@ -1,6 +1,7 @@
 <?php 
   $questions = [
     [
+      'name' => 'question1',
       'text' => 'Question 1: What is the largest state of the United States?',
       'answers' => [
         'a' => 'Kansas',
@@ -58,26 +59,26 @@
             <p><?php echo $question['text']; ?></p>
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
-                a) Alternative a.
+                <input type="radio" name="<?php echo $question['name']; ?>" value="<?php echo $question['answers']['a']; ?>">
+                a) <?php echo $question['answers']['a']; ?>
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                b) Alternative b.
+                <input type="radio" name="<?php echo $question['name']; ?>" value="<?php echo $question['answers']['b']; ?>">
+                b) <?php echo $question['answers']['b']; ?>
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                c) Alternative c.
+                <input type="radio" name="<?php echo $question['name']; ?>" value="<?php echo $question['answers']['c']; ?>">
+                c) <?php echo $question['answers']['c']; ?>
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                d) Alternative d.
+                <input type="radio" name="<?php echo $question['name']; ?>" value="<?php echo $question['answers']['d']; ?>">
+                d) <?php echo $question['answers']['d']; ?>
               </label>
             </div>
           <?php } ?>
