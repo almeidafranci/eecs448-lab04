@@ -1,3 +1,19 @@
+<?php
+$quantity1 = $_POST['product1'];
+$quantity2 = $_POST['product2'];
+$quantity3 = $_POST['product3'];
+
+if ($_POST['shipping'] == "free") {
+  $shippingName = "Free 7 day shipping";
+  $shippingValue = 0;
+}else if ($_POST['shipping'] == "night") {
+  $shippingName = "Over night shipping";
+  $shippingValue = 50;
+}else if ($_POST['shipping'] == "three-day") {
+  $shippingName = "Three day shipping";
+  $shippingValue = 5;
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -48,31 +64,31 @@
             <td>Sub Total</td>
           </tr>
           <tr>
-            <td>Item 1</td>
-            <td>1</td>
-            <td>2</td>
-            <td>2</td>
+            <td>Almond</td>
+            <td><?php echo $quantity1; ?></td>
+            <td>$ 40.00</td>
+            <td><?php echo "$".($quantity1*40); ?></td>
           </tr>
           <tr>
-            <td>Item 2</td>
-            <td>1</td>
-            <td>2</td>
-            <td>2</td>
+            <td>Peanut</td>
+            <td><?php echo $quantity2; ?></td>
+            <td>$ 55.00</td>
+            <td><?php echo "$".($quantity2*55); ?></td>
           </tr>
           <tr>
-            <td>Item 3</td>
-            <td>1</td>
-            <td>2</td>
-            <td>2</td>
+            <td>Cashew</td>
+            <td><?php echo $quantity3; ?></td>
+            <td>$ 73.00</td>
+            <td><?php echo "$".($quantity3*73); ?></td>
           </tr>
           <tr>
             <td>Shipping</td>
-            <td colspan="2">1</td>
-            <td>2</td>
+            <td colspan="2"><?php echo $shippingName; ?></td>
+            <td><?php echo "$".$shippingValue; ?></td>
           </tr>
           <tr>
             <td colspan="3">Total Cost</td>
-            <td>1</td>
+            <td><?php echo "$".($quantity1*40 + $quantity2*55 + $quantity3*73 + $shippingValue); ?></td>
           </tr>
         </table>
       </div>
