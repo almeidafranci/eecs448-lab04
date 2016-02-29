@@ -39,6 +39,90 @@
 
       <div>
         <h1>Web Store</h1>
+        <form action="customerBackend.php" method="POST">
+
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="col-lg-4">
+                <div class="thumbnail">
+                  <img src="almond.png" alt="Almond" style="height: 200px; width: 100%; display: block;">
+                  <div class="caption" style="padding: 9px;">
+                    <h3>Almond</h3>
+                    <p><label>Price: US$ 40.00</label></p>
+                    <p>
+                      <div class="form-group">
+                        <label for="product1">Quantity</label>
+                        <input type="number" id="product1" name="product1" class="form-control" min="0" />
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="thumbnail">
+                  <img src="peanut.png" alt="Peanut" style="height: 200px; width: 100%; display: block;">
+                  <div class="caption" style="padding: 9px;">
+                    <h3>Peanut</h3>
+                    <p><label>Price: US$ 55.00</label></p>
+                    <p>
+                      <div class="form-group">
+                        <label for="product2">Quantity</label>
+                        <input type="number" id="product2" name="product2" class="form-control" min="0" />
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="thumbnail">
+                  <img src="cashew.png" alt="Cashew" style="height: 200px; width: 100%; display: block;">
+                  <div class="caption" style="padding: 9px;">
+                    <h3>Cashew</h3>
+                    <p><label>Price: US$ 73.00</label></p>
+                    <p>
+                      <div class="form-group">
+                        <label for="product3">Quantity</label>
+                        <input type="number" id="product3" name="product3" class="form-control" min="0" />
+                      </div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <label>Shipping method:</label>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="shipping" value="free">
+                  Free 7 day
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="shipping" value="night">
+                  $50.00 over night
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="shipping" value="three-day">
+                  $5.00 three day
+                </label>
+              </div>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" class="form-control" />
+              </div>
+              <div class="form-group">
+                <label for="username">Password</label>
+                <input type="password" id="password" name="password" class="form-control" />
+              </div>
+              <button type="reset" class="btn btn-default">Reset</button>
+              <button type="submit" class="btn btn-primary">Buy</button>
+            </div>
+          </div>
+          
+        </form>
       </div>
 
     </div>
