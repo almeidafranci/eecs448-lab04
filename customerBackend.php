@@ -39,9 +39,44 @@
 
       <div>
         <h1>Your Purchase</h1>
+        <table class="table">
+          <tr>
+            <td></td>
+            <td>Quantity</td>
+            <td>Cost Per Item</td>
+            <td>Sub Total</td>
+          </tr>
+          <tr>
+            <td>Item 1</td>
+            <td>1</td>
+            <td>2</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Item 2</td>
+            <td>1</td>
+            <td>2</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Item 3</td>
+            <td>1</td>
+            <td>2</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>Shipping</td>
+            <td colspan="2">1</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td colspan="3">Total Cost</td>
+            <td>1</td>
+          </tr>
+        </table>
       </div>
 
     </div>
-    
+
   </body>
 </html>
