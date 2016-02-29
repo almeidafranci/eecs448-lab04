@@ -39,6 +39,7 @@
 
       <div>
         <h1>Your Purchase</h1>
+        <p><?php echo "Welcome ".$_POST['username'].", your password is ".$_POST['password']."."; ?></p>
         <table class="table">
           <tr>
             <td></td>
