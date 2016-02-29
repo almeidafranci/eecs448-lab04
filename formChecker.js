@@ -5,6 +5,7 @@ function validate() {
 
 	var re = /\S+@\S+\.\S+/;
 	var username = document.getElementById('username').value;
+	var password = document.getElementById('password').value;
 
 	if (quantity1 == "" || quantity2 == "" || quantity3 == "") {
 		alert("Please fill out all quantities.");
@@ -18,5 +19,11 @@ function validate() {
 		alert("Username must be in the form of name@domain.com.");
 		return false;
 	}
+
+	if (password == "") {
+		alert("Please provide a password.");
+		return false;
+	}
+	
 	return true;
 }
